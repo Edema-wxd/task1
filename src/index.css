@@ -116,7 +116,6 @@ h6{
     text-align: center;
     font-size: 18px;
     font-weight: 600;
-    font-style: semibol;
 }
 
 
@@ -173,6 +172,29 @@ h6{
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
+    }
+
+    .errpage{
+        margin: 136px 16px;
+    }
+
+    .err{
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .errtxt{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .errbtns{
+        flex-direction: column-reverse;
+    }
+
+    .errbtn{
+        width: 343px;
+        height: 48px;
+        font-size: 16px;
 
     }
 }
