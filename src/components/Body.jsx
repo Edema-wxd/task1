@@ -8,6 +8,7 @@ function Body() {
         <>
         <div className="profile">
             <img src={profileimg} alt="" id="profile_img" className="proimg"/>
+            
             <h1 id="twitter">Francis.dev</h1>
             <h2 id="slack">WoodsFrancis</h2>
         </div>
