@@ -1,4 +1,3 @@
-import Button from "../shared/Button"
 import slackimg from '../images/slack.svg'
 import gitimg from "../images/github.svg"
 import profileimg from "../images/profile.png"
@@ -8,26 +7,25 @@ function Body() {
         <>
         <div className="profile">
             <img src={profileimg} alt="" id="profile_img" className="proimg"/>
-            
             <h1 id="twitter">Francis.dev</h1>
-            <h2 id="slack">WoodsFrancis</h2>
+            <h2 id="slack">FrancisWoods</h2>
         </div>
 
 
         <div className="link-arr">
             
         
-        <a href="https://mobile.twitter.com/_edema_  " id=""><Button>Twitter Link</Button></a>
+        <a href="https://mobile.twitter.com/_edema_" className="btn" id="twt">Twitter Link </a>
 
-        <a href="https://training.zuri.team/" id="btn_zuri"><Button>Zuri Team</Button></a>
+        <a href="https://training.zuri.team/" className="btn" id="btn_zuri">Zuri Team <br /> <sub>Join the Zuri team</sub> </a>
 
-        <a href="http://books.zuri.team" id="books"><Button>Zuri Books</Button></a>
+        <a href="http://books.zuri.team"  className="btn" id="books">Zuri Books <br /> <sub>Zuri has complied a wide range of books on programing just for you </sub></a>
 
-        <a href="https://books.zuri.team/python-for-beginners?ref_id=<FrancisWoods>" id="book_python"><Button>Python Books</Button></a>
+        <a href="https://books.zuri.team/python-for-beginners?ref_id=FrancisWoods" className="btn"  id="book_python">Python Books <br /> <sub>Eager to automate tasks using python, I have the perfect book for you</sub></a>
 
-        <a href="https://background.zuri.team" id="pitch"><Button>Background Check for Coders</Button></a>
+        <a href="https://background.zuri.team" className="btn"  id="pitch">Background Check for Coders <br /> <sub>Review your canidates before the interview stage with our background checks</sub></a>
 
-        <a href="https://books.zuri.team/design-rules" id="book_design"><Button>Design Books</Button></a>  
+        <a href="https://books.zuri.team/design-rules"  className="btn" id="book_design">Design Books <br /> <sub>Want to learn Design, click here for a free copy to get your journey started.</sub></a>  
 
         </div>
 
