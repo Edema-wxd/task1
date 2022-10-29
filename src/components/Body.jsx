@@ -1,11 +1,16 @@
 import slackimg from '../images/slack.svg'
 import gitimg from "../images/github.svg"
 import profileimg from "../images/profile.png"
+import share from "../images/share.svg"
+import {CopyToClipboard} from 'react-copy-to-clipboard'
 
 function Body() {
     return (
         <>
         <div className="profile">
+            <CopyToClipboard text='https://task1-seven-chi.vercel.app/'>
+                <button className='share'></button>
+            </CopyToClipboard>
             <img src={profileimg} alt="" id="profile_img" className="proimg"/>
             <h1 id="twitter">Francis.dev</h1>
             <h2 id="slack">FrancisWoods</h2>

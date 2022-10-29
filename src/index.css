@@ -23,6 +23,10 @@ h6{
     line-height: 24px;
 }
 
+img{
+    border: none;
+}
+
 .proimg{
     max-width: 10%;
     max-height: 50%;
@@ -139,6 +143,22 @@ h6{
     color: #475467;
 }
 
+.share{
+    background-image: url('images/share.svg');
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    border-style: hidden;
+    right: 10%;
+    background-color: #a05f5f00;
+}
+
+.share:hover {
+    background-image: url("images/shareh.svg");
+    text-decoration: none;
+}
+
+
 @media screen and (max-width: 700px) {
     .foot-img{
         height: 22px;
@@ -201,5 +221,16 @@ h6{
 
     .btn{
         height: 68px;
+    }
+
+    .share{
+        background-image: url("images/more.svg");
+    text-decoration: none;
+
+    }
+    .share:hover{
+        background-image: url("images/moreh.svg");
+    text-decoration: none;
+
     }
 }
