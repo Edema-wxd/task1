@@ -12,7 +12,7 @@ function Body() {
                 <button className='share'></button>
             </CopyToClipboard>
             <img src={profileimg} alt="" id="profile__img" className="proimg"/>
-            <h1 id="twitter">Francis.dev</h1>
+            <h1 id="twitter_">Francis.dev</h1>
             <h2 id="slack">FrancisWoods</h2>
         </div>
 
@@ -20,9 +20,9 @@ function Body() {
         <div className="link-arr">
             
         
-        <a href="https://mobile.twitter.com/_edema_" className="btn" id="twt">Twitter Link </a>
+        <a href="https://mobile.twitter.com/_edema_" className="btn" id="twitter">Twitter Link </a>
 
-        <a href="https://training.zuri.team/" className="btn" id="btn__zuri">Zuri Team <br /> <sub>Join the Zuri team</sub> </a>
+        <a href="https://training.zuri.team/" className="btn" id="btn__zuri" >Zuri Team <br /> <sub>Join the Zuri team</sub> </a>
 
         <a href="http://books.zuri.team"  className="btn" id="books">Zuri Books <br /> <sub>Zuri has complied a wide range of books on programing just for you </sub></a>
 
