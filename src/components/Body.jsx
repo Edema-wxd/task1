@@ -11,7 +11,7 @@ function Body() {
             <CopyToClipboard text='https://task1-seven-chi.vercel.app/'>
                 <button className='share'></button>
             </CopyToClipboard>
-            <img src={profileimg} alt="" id="profile_img" className="proimg"/>
+            <img src={profileimg} alt="" id="profile__img" className="proimg"/>
             <h1 id="twitter">Francis.dev</h1>
             <h2 id="slack">FrancisWoods</h2>
         </div>
@@ -22,7 +22,7 @@ function Body() {
         
         <a href="https://mobile.twitter.com/_edema_" className="btn" id="twt">Twitter Link </a>
 
-        <a href="https://training.zuri.team/" className="btn" id="btn_zuri">Zuri Team <br /> <sub>Join the Zuri team</sub> </a>
+        <a href="https://training.zuri.team/" className="btn" id="btn__zuri">Zuri Team <br /> <sub>Join the Zuri team</sub> </a>
 
         <a href="http://books.zuri.team"  className="btn" id="books">Zuri Books <br /> <sub>Zuri has complied a wide range of books on programing just for you </sub></a>
 
@@ -30,7 +30,7 @@ function Body() {
 
         <a href="https://background.zuri.team" className="btn"  id="pitch">Background Check for Coders <br /> <sub>Review your canidates before the interview stage with our background checks</sub></a>
 
-        <a href="https://books.zuri.team/design-rules"  className="btn" id="book_design">Design Books <br /> <sub>Want to learn Design, click here for a free copy to get your journey started.</sub></a>  
+        <a href="https://books.zuri.team/design-rules"  className="btn" id="book__design">Design Books <br /> <sub>Want to learn Design, click here for a free copy to get your journey started.</sub></a>  
 
         </div>
 
