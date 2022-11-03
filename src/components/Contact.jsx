@@ -1,16 +1,20 @@
 
 function Contact() {
     return (
-        <form>
-            <h2>Contact Me</h2>
-            <p>Hi there, contact me to ask me about anything you have in mind.</p>
-            <label htmlFor="first_name">First Name</label>
-            <br />
-            <input type="text" name="First Name" id="first_name" placeholder="Enter your first name"/>
+        <>
+        <h2>Contact Me</h2>
+        <p>Hi there, contact me to ask me about anything you have in mind.</p>
 
-            <label htmlFor="last_name">Last Name</label>
-            <br />
-            <input type="text" name="Last Name" id="last_name" placeholder="Enter your last name" />
+        <form>
+            <div className="cont name">
+                <label htmlFor="first_name">First Name</label>
+                <br />
+                <input type="text" name="First Name" id="first_name" placeholder="Enter your first name"/>
+
+                <label htmlFor="last_name">Last Name</label>
+                <br />
+                <input type="text" name="Last Name" id="last_name" placeholder="Enter your last name" />
+            </div>
 
             <label htmlFor="email">Email</label>
             <br />
@@ -25,9 +29,8 @@ function Contact() {
 
             <button id="btn__submit" type="submit">Send Message</button>
 
-
-
         </form>
+        </>
     )
 }
 
