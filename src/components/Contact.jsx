@@ -6,19 +6,19 @@ function Contact() {
             <p>Hi there, contact me to ask me about anything you have in mind.</p>
             <label htmlFor="first_name">First Name</label>
             <br />
-            <input type="text" name="First Name" id="first_name" />
+            <input type="text" name="First Name" id="first_name" placeholder="Enter your first name"/>
 
             <label htmlFor="last_name">Last Name</label>
             <br />
-            <input type="text" name="Last Name" id="last_name" />
+            <input type="text" name="Last Name" id="last_name" placeholder="Enter your last name" />
 
             <label htmlFor="email">Email</label>
             <br />
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" placeholder="yourname@email.com"/>
 
             <label htmlFor="message">Message</label>
             <br />
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
 
             <input type="checkbox" name="consent" id="consent" />
             <p>You agree to providing your data to Francis who may contact you.</p>
