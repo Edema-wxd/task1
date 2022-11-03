@@ -3,6 +3,7 @@ import gitimg from "../images/github.svg"
 import profileimg from "../images/profile.png"
 import share from "../images/share.svg"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
+import { Link } from "react-router-dom"
 
 function Body() {
     return (
@@ -31,6 +32,9 @@ function Body() {
         <a href="https://background.zuri.team" className="btn"  id="pitch">Background Check for Coders <br /> <sub>Review your canidates before the interview stage with our background checks</sub></a>
 
         <a href="https://books.zuri.team/design-rules"  className="btn" id="book__design">Design Books <br /> <sub>Want to learn Design, click here for a free copy to get your journey started.</sub></a>  
+
+        <Link to='/contact' className="btn" id="contact">Contact Me</Link>  
+
 
         </div>
 
