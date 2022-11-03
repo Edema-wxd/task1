@@ -24,7 +24,8 @@ refactor: Refactoring a specific section of the code-base
 test: Everything related to testing
 docs: Everything related to documentation
 chore: Regular code maintenance.
-:bulb: NB:
+
+NB:
 You can only make one(1) Submission when you're done.
 If you have a correction/bug to fix, review your code, make changes, commit and push to the same GitHub repository you deployed and submitted the Link.
 All corrections/fixes must be done on/before deadline day and time.
