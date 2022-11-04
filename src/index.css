@@ -1,6 +1,9 @@
 :root{
     --dark-font: #101828;
     --light-font: #667085;
+    --cont-grey: #D0D5DD; 
+    --cont-ph: #667085;
+
 }
 
 body{
@@ -157,6 +160,50 @@ img{
     background-image: url("images/shareh.svg");
     text-decoration: none;
 }
+
+
+.contact{
+    text-align: left;
+}
+
+.conta{
+    padding: 12px 14px;
+}
+
+.in{
+    padding: 10px 14px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: var(--cont-grey);
+}
+
+.ctn {
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #1570EF;
+    padding: 12px 20px 12px 20px;
+    border: solid #1570EF 1px;
+    text-decoration: none;
+}
+  
+.ctn:hover {
+    background: #175CD3;
+    text-decoration: none;
+}
+
+.ctn:focus-visible{
+    filter: drop-shadow(0px 2px 4px #D1E9FF);
+
+}
+
+.ctn:disabled{
+    background-color: #B2DDFF;
+}
+
+
 
 
 @media screen and (max-width: 700px) {
