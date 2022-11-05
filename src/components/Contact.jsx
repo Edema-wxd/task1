@@ -69,18 +69,16 @@ function Contact() {
         setMessage(a.target.value)
     }
 
-
-
     return (
         <div className="contact">
-            <h2>Contact Me</h2>
+            <h2 >Contact Me</h2>
             <p className="ctxt">Hi there, contact me to ask me about anything you have in mind.</p>
 
-            <form>
+            <form >
                 <div className="cont name">
                     <div className="c">
                         <label htmlFor="first_name">First Name</label>
-                        <input onChange={handleFNChange} className="in" value={fnText}  type="text" name="First Name" id="first_name" placeholder="Enter your first name" required/>
+                        <input  onChange={handleFNChange} className="in" value={fnText}  type="text" name="First Name" id="first_name" placeholder="Enter your first name"  required/>
                         {errfnText && <div className="errmsg">{errfnText} </div>}
                     </div>
 
