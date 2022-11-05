@@ -18,7 +18,14 @@ h1{
     line-height: 30px;
     color: var(--dark-font);
 }
+h2{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #101828;
 
+}
 h6{
     color: #5925DC;
     font-size: 16px;
@@ -29,7 +36,15 @@ h6{
 img{
     border: none;
 }
+label{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #344054;
+    margin-top: 24px;
 
+}
 .proimg{
     max-width: 10%;
     max-height: 50%;
@@ -164,11 +179,26 @@ img{
 
 .contact{
     text-align: left;
-    padding: 156px 360px ;
+    margin: 156px auto;
+    width: 720px;
 }
 
 .conta{
     padding: 12px 14px;
+}
+
+.cont{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 24px;
+    flex-direction: row;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.c, .d{
+    width: 45%;
 }
 
 .in{
@@ -176,8 +206,18 @@ img{
     border-radius: 8px;
     border-style: solid;
     border-color: var(--cont-grey);
+    width: 100%;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
+.in:focus{
+    border: 1px solid #84CAFF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+}
 .ctn {
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
@@ -188,28 +228,129 @@ img{
     padding: 12px 20px 12px 20px;
     border: solid #1570EF 1px;
     text-decoration: none;
+    width: 100%;
 }
-  
+
 .ctn:hover {
     background: #175CD3;
     text-decoration: none;
 }
 
-.ctn:focus-visible{
-    filter: drop-shadow(0px 2px 4px #D1E9FF);
-
+.ctn:focus{
+    border: 1px solid #1570EF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+    border-radius: 8px;
 }
 
 .ctn:disabled{
-    background-color: #B2DDFF;
+    background: #B2DDFF;
+    border: 1px solid #B2DDFF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
 }
 
+.txtbxt{
+    display: inline;
+    width: 100%;
+    resize: none;
+    height: 140px;
+    font-family: inherit;
+}
+
+.txtbxt:focus{
+    border: 1px solid #84CAFF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+    border-radius: 8px;
+}
+
+.txtbxt:focus:invalid{
+    border: 1px solid #F89687;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
+    border-radius: 8px;
+}
+
+.ctxt{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #475467;
+}
+
+.control{
+    display: inline;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #475467;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 32px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+
+.control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+.control_indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #ededed;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #ffffff;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #ffffff;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid #1570EF;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
 
 
 
 @media screen and (max-width: 700px) {
     .foot-img{
         height: 22px;
+        width: max-content;
     }
 
     .footer{
@@ -231,7 +372,12 @@ img{
 
 @media screen and (max-width: 450px) {
     .footer{
-        display: none;
+        width: -moz-available;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: left;
     }
     .link-arr{
         height: auto;

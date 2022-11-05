@@ -3,35 +3,39 @@ function Contact() {
     return (
         <div className="contact">
             <h2>Contact Me</h2>
-            <p>Hi there, contact me to ask me about anything you have in mind.</p>
+            <p className="ctxt">Hi there, contact me to ask me about anything you have in mind.</p>
 
             <form>
                 <div className="cont name">
                     <div className="c">
                         <label htmlFor="first_name">First Name</label>
-                        <br />
-                        <input className="in"  type="text" name="First Name" id="first_name" placeholder="Enter your first name"/>
+                        <input className="in"  type="text" name="First Name" id="first_name" placeholder="Enter your first name" required/>
                     </div>
 
                     <div className="d">
                         <label htmlFor="last_name">Last Name</label>
-                        <br />
-                        <input  className="in" type="text" name="Last Name" id="last_name" placeholder="Enter your last name" />
+                        <input  className="in" type="text" name="Last Name" id="last_name" placeholder="Enter your last name" required/>
                     </div>
                 </div>
 
                 <label htmlFor="email">Email</label>
-                <br />
-                <input  className="in" type="email" name="email" id="email" placeholder="yourname@email.com"/>
+                <input  className="in" type="email" name="email" id="email" placeholder="yourname@email.com" required/>
 
-                <br/>
 
                 <label htmlFor="message">Message</label>
+                <textarea className="conta txtbxt" name="message" id="message" wrap="soft" placeholder="Send me a message and I'll reply you as soon as possible..." spellCheck required ></textarea>
+
                 <br />
-                <textarea className="txtbxt conta" name="message" id="message" cols="30" rows="10" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
-                <br/>
-                <input type="checkbox" name="consent" id="consent" />
-                <p>You agree to providing your data to Francis who may contact you.</p>
+                <div className="chk">
+
+                    <label class="control control-checkbox">
+                        You agree to providing your data to Francis who may contact you.
+                            <input type="checkbox" name="consent" id="consent" requiredchecked="checked" />
+                        <div class="control_indicator"></div>
+                    </label>
+                
+                </div>
+                
 
                 <button className="ctn" id="btn__submit" type="submit">Send Message</button>
 
