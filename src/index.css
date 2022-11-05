@@ -376,6 +376,10 @@ label{
         height: 528px;
         margin: 48px 50px 32px;
     }
+    .contact{
+        width: 75%;
+        margin: 60px auto;
+    }
 }
 
 @media screen and (max-width: 450px) {
