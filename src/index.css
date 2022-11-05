@@ -345,9 +345,6 @@ label{
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
-.control-checkbox input:disabled ~ .control_indicator:after {
-    border-color: #7b7b7b;
-}
 
 
 .errmsg{
