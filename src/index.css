@@ -383,6 +383,10 @@ label{
 }
 
 @media screen and (max-width: 450px) {
+    h2{
+        margin-bottom: 16px;
+    }
+
     .footer{
         width: -moz-available;
         display: flex;
@@ -437,6 +441,30 @@ label{
     .share:hover{
         background-image: url("images/moreh.svg");
     text-decoration: none;
+    }
 
+    .cont{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .c, .d{
+        width: inherit;
+    }
+
+    .in{
+        width: 90%;
+    }
+
+    .txtbxt{
+        width: 90%;
+    }
+    
+    .ctn{
+        width: 100%;
+    }
+    .contact{
+        margin: 60px 16px 64px;
+        width: inherit;
     }
 }
