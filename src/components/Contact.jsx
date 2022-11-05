@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 function Contact() {
-    const [check, setCheck] = useState()
+    const [check, setCheck] = useState(true)
     const [btnDisabled, setBtnDisabled] = useState(true)
     const [fnText, setFNText] = useState('')
     const [lnText, setLNText] = useState('')
@@ -14,14 +14,14 @@ function Contact() {
     const [erremail, seterrEmail] = useState('')
     const [errmessage, seterrMessage] = useState('')
 
-    const handleCheck = () =>{
-        if (check === true) {
+    const handleCheck = (e) =>{
+        if ( check === true){
+            setBtnDisabled(false)
+        } else{
             setBtnDisabled(false)
         }
-        else(
-            setCheck('Please consent to me contacting you')
-        )
-        
+
+        setCheck(false)
     }
 
     const handleFNChange = (a) =>{
@@ -46,9 +46,11 @@ function Contact() {
         setLNText(a.target.value)
     }
     const handleEmailChange = (a) =>{
+        const regex = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+
         if ( email === ''){
             seterrEmail(null)
-        } else if (email !== '' && email.trim().length <= 5) {
+        } else if (email !== '' && (email.trim().length <= 5 || regex.test(email) === false) ) {
             seterrEmail('Enter a valid email')
         } else{
             seterrEmail(null)
@@ -101,12 +103,11 @@ function Contact() {
                 <br />
                 <div className="chk">
 
-                    <label class="control control-checkbox">
+                    <label className="control control-checkbox">
                         You agree to providing your data to Francis who may contact you.
                             <input onChange={handleCheck} type="checkbox" name="consent" id="consent" required checked="checked" value={check} />
-                        <div class="control_indicator"></div>
+                        <div className="control_indicator"></div>
                     </label>
-                    {check && <div className="errmsg">{check} </div>}
                 
                 </div>
                 
