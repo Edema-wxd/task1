@@ -43,7 +43,7 @@ function Body() {
                 <img src={ slackimg } alt="slack" className="gap" />
             </a>
             
-            <a href="/">
+            <a href="https://github.com/Edema-wxd">
                 <img src={ gitimg } alt="Github" />
             </a>
         </div>
